@@ -8,6 +8,8 @@ gem 'compass', '>= 0.10.4'
 gem 'factory_girl'
 gem 'ffaker'
 gem 'nifty-generators'
+gem 'placeholder'
+gem 'will_paginate', '~> 3.0.pre2'
 
 
 # Bundle gems for the local environment. Make sure to

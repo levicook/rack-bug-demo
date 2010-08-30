@@ -1,8 +1,6 @@
-# Read about factories at http://github.com/thoughtbot/factory_girl
-
 Factory.define :coupon do |f|
-  f.product_id 1
-  f.discount "9.99"
-  f.begins_on "2010-08-30 07:12:38"
-  f.ends_on "2010-08-30 07:12:38"
+  f.association :product
+  f.discount { "%s.%s" % [(1..5).rand, (0..99).rand] }
+  f.begins_on today+(-10..10).rand
+  f.ends_on { |c| c.begins_on + (1..10).rand }
 end

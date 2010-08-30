@@ -1,6 +1,10 @@
 class Product < ActiveRecord::Base
   belongs_to :brand
   has_many :coupons
+
+  def best_coupon
+    coupons.order('discount desc').limit(1).first
+  end
 end
 
 # == Schema Information

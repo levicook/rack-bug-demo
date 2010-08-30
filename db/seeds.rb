@@ -4,7 +4,15 @@
 DatabaseCleaner.clean_with :truncation
 Dir["test/fixtures/*.rb"].each { |f| require f }
 
-20.times { Factory.create(:brand) }
-@brands = Brand.all
+10.times do # brands ----------------------------------------
+  brand = Factory.create(:brand)
 
-200.times { Factory.create(:product, :brand => @brands.rand) }
+  (15..25).rand.times do # products  ------------------------
+    product = Factory.create(:product, :brand => brand)
+
+    (20..40).rand.times do # coupons ------------------------
+      Factory.create(:coupon, :product => product)
+
+    end
+  end
+end
