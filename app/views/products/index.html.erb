@@ -7,17 +7,19 @@
 <div class="products">
   <% @products.each do |product| -%>
     <%= div_for product do %>
-      <%= placeholder 125, :text => product.name %>
-      <span class="brand"><%= product.brand.name %></span>
-      <span class="name"><%= product.name %></span>
-      <span class="price">
+      <%= placeholder 125 %>
+      <div class="name">
+        <%= product.brand.name %>
+        <%= product.name %>
+      </div>
+      <div class="price">
         <%= number_to_currency product.price %>
-      </span>
-      <% if product.best_coupon.present? -%>
-        <span class="discount">
-          + <%= number_to_currency product.best_coupon.discount %> Off!
-        </span>
-      <% end -%>
+        <% if product.best_coupon.present? -%>
+          <span class="discount">
+            + <%= number_to_currency product.best_coupon.discount %> Off!
+          </span>
+        <% end -%>
+      </div>
     <% end -%>
   <% end -%>
 </div>
