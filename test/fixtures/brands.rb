@@ -1,3 +1,3 @@
 Factory.define :brand do |f|
-  f.name "MyString"
+  f.name { Faker::Company.name }
 end
