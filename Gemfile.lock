@@ -97,7 +97,7 @@ PLATFORMS
 
 DEPENDENCIES
   annotate
-  compass
+  compass (>= 0.10.4)
   database_cleaner (>= 0.6.0.rc.2)
   factory_girl
   ffaker
