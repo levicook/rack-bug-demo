@@ -9,6 +9,7 @@ gem 'ffaker'
 gem 'nifty-generators'
 gem 'placeholder'
 gem 'will_paginate', '~> 3.0.pre2'
+gem 'hassle'
 
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
