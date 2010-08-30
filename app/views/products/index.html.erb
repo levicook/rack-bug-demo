@@ -13,10 +13,12 @@
         <%= product.name %>
       </div>
       <div class="price">
-        <%= number_to_currency product.price %>
-        <% if product.best_coupon.present? -%>
+        <% if !product.best_coupon.present? -%>
+          <%= number_to_currency product.price %>
+        <% else -%>
           <span class="discount">
-            + <%= number_to_currency product.best_coupon.discount %> Off!
+            <%= number_to_currency(product.price - product.best_coupon.discount) %>
+            (<%= number_to_currency product.best_coupon.discount %> Off!)
           </span>
         <% end -%>
       </div>

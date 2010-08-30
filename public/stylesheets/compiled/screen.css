@@ -172,14 +172,14 @@ a {
   float: left;
 }
 /* line 17, ../../../app/stylesheets/screen.scss */
+#products_index .product .name, #products_index .product .price {
+  margin-left: 15px;
+}
+/* line 18, ../../../app/stylesheets/screen.scss */
 #products_index .product img {
   display: block;
   margin-top: 15px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
-}
-/* line 22, ../../../app/stylesheets/screen.scss */
-#products_index .product .name, #products_index .product .price {
-  margin-left: 15px;
 }
