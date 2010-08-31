@@ -1,5 +1,6 @@
 RackBugDemo::Application.configure do
   # Settings specified here will take precedence over those in config/environment.rb
+  config.middleware.use 'Hassle'
 
   # HINT: rake secret
   config.middleware.use "Rack::Bug",
