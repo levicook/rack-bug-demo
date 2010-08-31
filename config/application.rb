@@ -48,3 +48,5 @@ module RackBugDemo
     config.filter_parameters += [:password]
   end
 end
+
+Sass::Plugin.options[:template_location] = { 'app/stylesheets' => 'public/stylesheets' }
