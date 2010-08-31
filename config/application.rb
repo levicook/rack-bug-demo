@@ -49,4 +49,5 @@ module RackBugDemo
   end
 end
 
+require 'haml'
 Sass::Plugin.options[:template_location] = { 'app/stylesheets' => 'public/stylesheets' }
