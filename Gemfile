@@ -6,10 +6,10 @@ gem 'mysql2'
 gem 'compass', '>= 0.10.4'
 gem 'factory_girl'
 gem 'ffaker'
-gem 'hassle'
 gem 'nifty-generators'
 gem 'placeholder'
 gem 'will_paginate', '~> 3.0.pre2'
+
 
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
