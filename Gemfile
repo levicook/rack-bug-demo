@@ -16,8 +16,9 @@ gem 'will_paginate', '~> 3.0.pre2'
 # and rake tasks are available in development mode:
 group :development, :test do
 
-  # XXX
-  gem 'rack-bug', :require => 'rack/bug', :git => 'http://github.com/brynary/rack-bug.git', :branch => 'rails3'
+  # DEMO
+  gem 'rack-bug', :require => 'rack/bug', 
+    :git => 'http://github.com/brynary/rack-bug.git', :branch => 'rails3'
 
   gem 'annotate'
   gem 'database_cleaner', '>= 0.6.0.rc.2'
